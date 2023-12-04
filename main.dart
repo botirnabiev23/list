@@ -1,92 +1,93 @@
 // import 'dart:html';
 
 // import 'dart:html';
+import 'car.dart';
 
-void main() {
-  // num summa = 0;
-  // var newList = [
-  //   for(dynamic i = 10; i <= 100; i++) i,
-  // ];
-  // newList.insert(5, 'Super');
-  // print(newList);
+// void main() {
+// num summa = 0;
+// var newList = [
+//   for(dynamic i = 10; i <= 100; i++) i,
+// ];
+// newList.insert(5, 'Super');
+// print(newList);
 
-  // var newList2 = [];
-  // for(int i =10; i <= 100; i++){
-  //   newList2.add(i);
-  // }
-  // print(newList2);
+// var newList2 = [];
+// for(int i =10; i <= 100; i++){
+//   newList2.add(i);
+// }
+// print(newList2);
 
-  // var result3 = calculateListSum(<num>[3, 2, 4, 3, 2, 1]);
-  // print(result3);
+// var result3 = calculateListSum(<num>[3, 2, 4, 3, 2, 1]);
+// print(result3);
 
-  // var list = <num>[3, 2, 4, 3, 2, 1];
-  // printList(list);
+// var list = <num>[3, 2, 4, 3, 2, 1];
+// printList(list);
 
-  // var list = <dynamic>[3,2,5,2,5,6.78];
-  // var list2 = [true, false, 'hi'];
-  // var result6 = addTwoLists(list, list2);
-  // print(result6);
+// var list = <dynamic>[3,2,5,2,5,6.78];
+// var list2 = [true, false, 'hi'];
+// var result6 = addTwoLists(list, list2);
+// print(result6);
 
-  // final result7 =
-  //     sun0Charaters(<String>['apple', 'banana', 'cars', 'football']);
-  // print(result7);
+// final result7 =
+//     sun0Charaters(<String>['apple', 'banana', 'cars', 'football']);
+// print(result7);
 
-  // final result8 = whichSumBig([
-  //   3,
-  //   6,
-  //   5
-  // ], [
-  //   6,
-  //   4,
-  //   6,
-  // ]);
-  // print(result8);
+// final result8 = whichSumBig([
+//   3,
+//   6,
+//   5
+// ], [
+//   6,
+//   4,
+//   6,
+// ]);
+// print(result8);
 
-  // final list = List.generate(17, (index) => null);
-  // print(remove15(list));
+// final list = List.generate(17, (index) => null);
+// print(remove15(list));
 
-  // printMonthList();
+// printMonthList();
 
-  // var result3 = calculateListSum([3,4,3,4,5,]);
-  // print(result3);
+// var result3 = calculateListSum([3,4,3,4,5,]);
+// print(result3);
 
-  // var result4 = calculateListSum2([3, 4, 5, 6, 7, 8]);
-  // print(result4);
+// var result4 = calculateListSum2([3, 4, 5, 6, 7, 8]);
+// print(result4);
 
-  // var list = [3, 5, 4, 3, 5];
-  // printList(list);
+// var list = [3, 5, 4, 3, 5];
+// printList(list);
 
-  // var list = <dynamic>[
-  //   3,
-  //   5,
-  //   6,
-  //   7,
-  //   8,
-  // ];
-  // var list2 = ['hello', 'world'];
-  // var result6 = addTwoLists(list, list2);
-  // print(result6);
+// var list = <dynamic>[
+//   3,
+//   5,
+//   6,
+//   7,
+//   8,
+// ];
+// var list2 = ['hello', 'world'];
+// var result6 = addTwoLists(list, list2);
+// print(result6);
 
-  // final result7 = wordLegth(['apple', 'football', 'chelsea']);
-  // print(result7);
+// final result7 = wordLegth(['apple', 'football', 'chelsea']);
+// print(result7);
 
-  // final result8 = whichSumBig([3,5,6,7,8,], [1,2,3,4,46]);
-  // print(result8);
+// final result8 = whichSumBig([3,5,6,7,8,], [1,2,3,4,46]);
+// print(result8);
 
-  // final list = List.generate(17, (index) => null);
-  // print(remove15(list));
+// final list = List.generate(17, (index) => null);
+// print(remove15(list));
 
-  // printMonthList();
+// printMonthList();
 
-  // var result3 = calculateListSum([3,4,5,6,7,8]);
-  // print(result3);
+// var result3 = calculateListSum([3,4,5,6,7,8]);
+// print(result3);
 
-  // var result4 = calculateListSum2([1,2,4,6]);
-  // print(result4);
+// var result4 = calculateListSum2([1,2,4,6]);
+// print(result4);
 
-  // var list = <num>[3, 4, 5, 6, 7];
-  // printList(list);
-}
+// var list = <num>[3, 4, 5, 6, 7];
+// printList(list);
+// }
 
 // num calculateListSum(List<num> list) {
 //   num summa = 0;
@@ -289,4 +290,33 @@ void printList(List<dynamic> list) {
   });
 }
 
-// newcode
+void main() {
+  final Car nexia = Car(
+    name: 'Nexia',
+    extraBalon: 2,
+    countSeats: 4,
+    massa: 2,
+  );
+  print(nexia.massToKg());
+
+  final Car matiz = Car(
+    name: 'Matiz',
+    extraBalon: 2,
+    countSeats: 4,
+    massa: 1.5,
+  );
+
+  final Car damas = Car(
+    name: 'Damas',
+    extraBalon: 2,
+    countSeats: 6,
+    massa: 1.7,
+  );
+
+  final Car cobalt = Car(
+    name: 'Cobalt',
+    extraBalon: 2,
+    countSeats: 4,
+    massa: 2,
+  );
+}
